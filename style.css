@@ -1,0 +1,158 @@
+.categories-section h1 {
+    text-align: center;
+    color: #289323;
+    font-size: 50px;
+    margin-bottom: 5rem;
+}
+
+.category-items {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.category-items img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.category {
+    justify-items: center;
+    line-height: 2;
+    font-size: 22px;
+}
+
+#our-story {
+    justify-items: center;
+    margin: 5rem 0;
+    font-size: 25px;
+}
+
+.community {
+    height: 800px;
+    width: 100%;
+    align-content: end;
+    background-image: linear-gradient(rgba(0, 58, 42, 0), rgba(0, 58, 42, 0.8)), url('https://www.gainhealth.org/sites/default/files/2025-02/dsc07855.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 3rem;
+}
+
+.community h1 {
+    text-align: center;
+    padding-right: 10rem;
+    padding-bottom: 3rem;
+    font-size: 70px;
+    color: white;
+    margin-left: 20rem;
+}
+
+.users-story {
+    justify-items: center;
+}
+
+.users-story i {
+    font-size: 150px;
+}
+
+.users-story p {
+    padding: 5rem 15rem;
+    font-size: 20px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .category-items {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+
+        h2 {
+            font-size: 25px;
+        }
+    }
+
+
+    .categories-section h1
+   {
+        font-size: 2rem;
+        text-align: center;
+        margin: 1rem;
+    }
+
+
+    .category-items img {
+        width: 60vw;
+        height: auto;
+        min-width: 120px;
+        max-width: 200px;
+        margin: 1rem auto;
+    }
+
+    .community {
+        height: auto;
+        min-height: 350px;
+    }
+
+    .community h1 {
+        font-size: 1.6rem;
+        padding-right: 0;
+        margin-left: 0;
+    }
+
+    .users-story p {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .users-story i {
+        font-size: 70px;
+    }
+}
+
+
+@media only screen and (min-width:901px) and (max-width: 1024px) {
+
+
+    .community h1 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .users-story p {
+        padding: 1rem;
+        text-align: justify;
+    }
+
+    #contact-us {
+        flex-direction: column;
+    }
+
+}
+
+
+@media only screen and (min-width:1025px) and (max-width: 1280px) {
+
+
+    .categories-section {
+        margin-left: -9%;
+    }
+
+    .community h1 {
+        font-size: 60px;
+        width: 100%;
+        margin-left: 15%;
+    }
+
+    .users-story p {
+        width: 135%;
+        padding-left: 28%;
+    }
+
+    .fa-users {
+        margin-left: -9%;
+    }
+}
