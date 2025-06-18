@@ -15,7 +15,7 @@ Feel free to share with your friends and family, enjoy the fast affordable app t
 
 
 ## Big Minds members 
-| Full Names               | 
+| Name               | 
 |--------------------|
 | Hewan Mehari       |
 | Kevine Umutoni     |
