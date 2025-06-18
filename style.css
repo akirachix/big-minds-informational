@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: nunito;
+    src: url('fonts/Nunito-VariableFont_wght.ttf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #003A2A;
+    font-family: nunito;
+    font-size: 16px; 
+}
+
+.l-green {
+    color: #289323;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.5% 3%;
+    background-color: white;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style-type: none;
+    gap: 60px;
+    margin-top: 1.5rem;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #003A2A;
+    cursor: pointer;
+}
+.nav-bar a:active {
+    color: #289323;
+}
+
+.header-logo img {
+    height: 60px;
+}
+
+#home {
+    color: #289323;
+}
+
+.nav-bar ul li {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hero img {
+    margin: 0 2rem 0 0;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 6rem;
+}
+.hero h1 {
+    font-size: 90px;
+}
+
+.hero-title {
+    margin-top: 5rem;
+}
+.hero-title p {
+    font-size: 25px;
+    padding-right: 25%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.hero-btn {
+    padding: 0.7rem 3.5rem;
+    font-family: nunito;
+    border-radius: 50px;
+    font-size: 18px;
+    border: none;
+    font-weight: bolder;
+    margin: 3rem 1rem 0;
+}
+
+.shop-now-btn {
+    background-color: #003A2A;
+    color: white;
+}
+.shop-now-btn:hover,
+.categories-btn:hover {
+    cursor: pointer;
+}
+
+.categories-btn {
+    border: #003A2A solid 2px;
+}
+
+.download {
+    background-color: hsl(163, 100%, 11%);
+    padding: 0.5rem 5rem 1.5rem 5rem;
+    margin-top: 15rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.google-play {
+    align-self: center;
+}
+.google-play img {
+    height: 30px;
+}
+.google-play p {
+    font-size: 25px;
+}
+.playstore {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.prototype {
+    display: flex;
+    margin-top: -10rem;
+    gap: 50px;
+}
+.prototype img {
+    height: 300px;
+    width: 150px;
+}
+
+.orders {
+    transform: rotate(-20deg);
+}
+.cart {
+    transform: rotate(20deg);
+}
+.safi-greens-home {
+    z-index: 100;
+    margin-top: -3rem;
+}
+@media only screen and (max-width: 900px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    .header-logo img {
+        height: 35px;
+    }
+    .nav-bar ul {
+        gap: 15px;
+        margin-top: 0.8rem;
+    }
+
+    .nav-bar ul a {
+        font-size: small;
+    }
+    .nav-bar ul li {
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .download{
+        margin-top: 9rem;
+    }
+    .hero {
+        flex-direction: column-reverse;
+        margin: 2rem 1rem;
+        align-items: center;
+    }
+    .hero img {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+    .hero-title{
+        margin-top: 1rem;
+    }
+    .hero-title h1 {
+        font-size: 40px;
+        text-align: center;
+        padding: 0;
+    }
+    .hero-title p {
+        font-size: 1rem;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .hero-btn {
+        margin: 2rem 0 0 0;
+        font-size: 1rem;
+        display: block;
+        justify-self: center;
+    }
+    .download {
+        margin-top: 60%;
+        flex-direction: column;
+        align-items: center;
+        background: none;
+        padding: 1rem;
+        margin: 1rem 0 0 0;
+        div{
+            transform: rotate(0);
+        }
+    }
+    .google-play p {
+        font-size: 20px;
+        color: #003A2A;
+        justify-self: center;
+        margin-top: 5px;
+    }
+    .google-play img {
+        height: 20px;
+    }
+    .playstore{
+        font-size: 20px;
+    }
+    .prototype{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .prototype img {
+        height: 500px;
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width:901px) and (max-width: 1024px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    .hero{
+        justify-content: space-between;
+        margin:2rem;
+    }
+    .hero h1{
+        font-size: 60px;
+    }
+    .hero-title p{
+        padding: 0;
+        margin-left: 0;
+    }
+    .hero img{
+        margin:2rem 0;
+    }
+    .hero-btn{
+        margin: 30px 10px 0 0;
+        padding: 10px 30px;
+    }
+    .download{
+        flex-direction: column;
+        justify-content: center;
+        padding: 5rem 8rem;
+    }
+    .prototype{
+        margin-bottom: 3rem;
+        gap:60px;
+    }
+    .safi-greens-home{
+        margin-top: -3rem;
+    }
+}
+@media only screen  and (min-width:1025px) and (max-width: 1280px){
+    html,body{
+        overflow-x: hidden;
+    }
+    .hero-title p {
+        font-size: 1.5rem;
+        margin: 0;
+        padding-right:0 ;
+    }
+    .hero img{
+        margin-left: 0;
+        margin-top: 0.5rem;
+        width:100%;
+    }
+    .hero h1 {
+        font-size: 60px;
+    }
+    .download{
+        margin-top:20rem ;
+    }
+    .hero-btn{
+        margin: 3rem 2rem 0 0;
+    }
+}
