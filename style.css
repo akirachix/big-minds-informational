@@ -1,0 +1,149 @@
+.help-section h1 {
+    justify-self: center;
+    font-size: 45px;
+    margin-bottom: 5rem;
+}
+
+.help {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.help i {
+    font-size: 80px;
+}
+.help h2 {
+    margin-top: 1rem;
+}
+
+.icons {
+    font-size: 24px;
+    margin: 20px 10px;
+    color: #0d3c28;
+}
+
+#faq-container {
+    max-width: 700px;
+    margin: 5rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+#faq-container h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.faq-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin: 1rem 0;
+    background: #F8F8F8;
+    border-radius: 8px;
+}
+.faq-question {
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.faq-question i {
+    border: solid #003A2A 2px;
+    padding: 5px;
+    border-radius: 100px;
+    margin-left: 1rem;
+}
+.faq-answer {
+    border-bottom: 1px solid #ccc;
+    display: none;
+    padding: 10px 1.5rem;
+    font-size: 1rem;
+    color: #444;
+}
+.faq-item.open .faq-answer {
+    display: block;
+    animation: fadeIn 0.3s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .help i {
+        font-size: 60px;
+    }
+    .help h2 {
+        font-size: 20px;
+    }
+    #faq-container {
+        max-width: 98vw;
+        margin: 1rem auto;
+        padding: 0.5rem;
+    }
+    #faq-container h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .faq-item {
+        padding: 6px 0;
+    }
+    .faq-question,
+    .faq-answer {
+        font-size: 1rem;
+    }
+    .faq-answer{
+        width: 100%;
+        padding: 1rem 0;
+        margin: 0;
+    }
+    .faq-question i {
+        font-size: 0.98rem;
+        padding: 4px;
+    }
+
+
+}
+
+@media only screen and (min-width:901px) and (max-width: 1024px) {
+
+
+      .faq-answer{
+        width: 100%;
+        padding: 1rem 0;
+        margin: 0;
+    }
+
+
+}
+
+@media only screen  and (min-width:1025px) and (max-width: 1280px) {
+        .help-section {
+        margin-top: 4%;
+    }
+    .faq-item {
+        width: 130%;
+        margin-left: -20%;
+    }
+    .community {
+        width: 99%;
+    }
+     .faq-answer{
+        width: 100%;
+        padding: 1rem 0;
+        margin: 0;
+    }
+
+
+}
