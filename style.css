@@ -1,17 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: nunito;
-    src: url(fonts/Nunito-VariableFont_wght.ttf);
+    src: url('fonts/Nunito-VariableFont_wght.ttf');
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
+    color: #003A2A;
     font-family: nunito;
+    font-size: 16px; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.5% 3%;
+    background-color: white;
+}
+.nav-bar{
+    position: relative;
+}
+.nav-bar ul {
+    display: flex;
+    list-style-type: none;
+    gap: 60px;
+    margin-top: 1.5rem;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #003A2A;
+    cursor: pointer;
+}
+.nav-bar a:active {
+    color: #289323;
+}
+
+.hamburger{
+    display: none;
+}
+
+.header-logo img {
+    margin-top: -10px;
+}
+
+#home {
+    color: #289323;
+}
+
+.nav-bar ul li {
+    font-size: 32px;
+}
+
+.hero img {
+    margin: 0 2rem 0 0;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 6rem;
+}
+.hero h1 {
+    font-size: 110px;
+}
+
+.hero-title {
+    margin-top: 5rem;
+}
+.hero-title p {
+    font-size: 40px;
+    padding-right: 25%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.hero-btn {
+    padding: 0.7rem 3.5rem;
+    font-family: nunito;
+    border-radius: 50px;
+    font-size: 24px;
+    border: none;
+    font-weight: bolder;
+    margin: 3rem 1rem 0;
+}
+
+.shop-now-btn {
+    background-color: #003A2A;
+    color: white;
+}
+.shop-now-btn:hover,
+.categories-btn:hover {
+    cursor: pointer;
+}
+
+.categories-btn {
+    border: #003A2A solid 2px;
+}
+
+.download {
+    background-color: hsl(163, 100%, 11%);
+    padding: 0.5rem 5rem 1.5rem 5rem;
+    margin-top: 17rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.google-play {
+    align-self: center;
+}
+.google-play img {
+    height: 35px;
+}
+.google-play p {
+    font-size: 40px;
+}
+
+.google-play span {
+    color: #289323;
+}
+
+.fresh-groceries{
+    margin-left: 4rem;
+}
+.playstore {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.prototype {
+    display: flex;
+    margin-top: -10rem;
+    gap: 50px;
+}
+.prototype img {
+    height: 300px;
+    width: 150px;
+}
+
+.orders {
+    transform: rotate(-20deg);
+}
+.cart {
+    transform: rotate(20deg);
+}
+.safi-greens-home {
+    z-index: 100;
+    margin-top: -3rem;
 }
 
 .categories-section h1 {
     text-align: center;
     color: #289323;
     font-size: 60px;
-    margin-bottom: 5rem;
+    margin: 5rem;
 }
 
 .category-items {
@@ -62,7 +216,7 @@ body {
     position: absolute;
     padding: 8%;
     height: 20px;
-    width: 84%;
+    width: 100%;
     z-index: -1;
     background-color: #003a29b2;
     bottom: 0;
@@ -197,6 +351,14 @@ body {
 }
 
 
+@media only screen and (width:344px) {
+    .google-play p {
+        font-size: 18px;
+    }
+    .fresh-groceries{
+        margin-left: 1rem;
+    }
+}
 
 
 @media only screen and (max-width: 700px) {
@@ -254,7 +416,120 @@ body {
 
 }
 
-@media only screen and (min-width:701px) and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    .header-logo img {
+        height: 60px;
+        margin-top: 0;
+    }
+        .nav-bar ul {
+            display: none;
+            flex-direction: column;
+            position: fixed;        
+            top: 0;                
+            left: 0;
+            width: 100vw;           
+            background: white;      
+            gap: 15px;
+            padding: 3rem 0 1rem 0;
+            /* margin: 0; */
+            /* z-index: 999; */
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .nav-bar ul.show {
+            display: flex;
+        }
+
+        .hamburger {
+            display: block;
+            margin-top: 15px;
+            font-size: 25px;
+            position: relative;
+            z-index: 1001;           
+        }
+        .nav-bar ul a {
+            font-size: 1.2rem;
+            width: 100vw;
+            text-align:left;
+            padding:0.2rem 1rem;
+            display: block;
+        }
+        .nav-bar ul li {
+            font-size: 15px;
+            width: 100vw;
+            text-align: center;
+        }
+
+    .download{
+        margin-top: 9rem;
+    }
+    .hero {
+        flex-direction: column-reverse;
+        margin: 2rem 1rem;
+        align-items: center;
+    }
+    .hero img {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+    .hero-title{
+        margin-top: 1rem;
+    }
+    .hero-title h1 {
+        font-size: 40px;
+        text-align: center;
+        padding: 0;
+    }
+    .hero-title p {
+        font-size: 1rem;
+        width: 100%;
+        margin:0;
+        padding: 0;
+        text-align: center;
+    }
+    .hero-btn {
+        margin: 2rem 0 0 0;
+        font-size: 1rem;
+        display: block;
+        justify-self: center;
+    }
+    .download {
+        margin-top: 60%;
+        flex-direction: column;
+        align-items: center;
+        background: none;
+        padding: 1rem;
+        margin: 1rem 0 0 0;
+        div{
+            transform: rotate(0);
+        }
+    }
+    .google-play p {
+        font-size: 20px;
+        color: #003A2A;
+        justify-self: center;
+        margin-top: 5px;
+    }
+    .google-play img {
+        height: 20px;
+    }
+    .playstore{
+        font-size: 20px;
+    }
+    .prototype{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .prototype img {
+        height: 500px;
+        width: 250px;
+    }
     .category-items {
         padding: 1rem;
         display: flex;
@@ -284,11 +559,57 @@ body {
     .users-story i {
         font-size: 70px;
     }
-
-
 }
 
 @media only screen and (min-width:901px) and (max-width: 1024px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    .nav-bar ul li {
+        font-size: 20px;
+    }
+    .header-logo img{
+        height: 60px;
+        margin-top: -2px;
+    }
+    .hero{
+        justify-content: space-between;
+        margin:2rem;
+    }
+    .hero h1{
+        font-size: 60px;
+    }
+    .hero-title p{
+        padding: 0;
+        font-size: 25px;
+        margin-left: 0;
+    }
+    .hero img{
+        margin:2rem 0;
+    }
+    .hero-btn{
+        margin: 30px 10px 0 0;
+        padding:10px 30px;
+        font-size: 15px;
+    }
+    .download{
+        flex-direction: column;
+        justify-items: center;
+        padding: 5rem 8rem;
+    }
+    .prototype{
+        margin:-10rem 3rem 3rem;
+    }
+    .google-play p{
+        font-size: 25px;
+    }
+    .playstore{
+        font-size: 35px;
+    }
+    .fresh-groceries{
+        margin-left: 2rem;
+    }
     .community {
         height: 800px;
         width: 100%;
@@ -344,6 +665,46 @@ body {
 
 
 @media only screen and (min-width:1025px) and (max-width: 1280px) {
+    html,body{
+        overflow-x: hidden;
+    }
+    .header-logo img{
+        height: 65px;
+    }
+    .hero-title p {
+        font-size: 1.5rem;
+        margin: 0;
+        padding-right:0 ;
+    }
+    .nav-bar ul li {
+        font-size: 20px;
+    }
+    .hero img{
+        margin-left: 0;
+        margin-top: 0.5rem;
+        width:100%;
+    }
+    .hero h1 {
+        font-size: 60px;
+    }
+    .download{
+        margin-top:20rem ;
+    }
+    .hero-btn{
+        margin: 3rem 2rem 0 0;
+    }
+    .google-play p {
+        font-size: 18px;
+    }
+    .playstore{
+        font-size: 22px;
+    }
+    .google-play img {
+        height: 20px;
+    }
+    .fresh-groceries{
+        margin-left: 2rem;
+    }
 
 
     .categories-section {
@@ -434,9 +795,6 @@ body {
 }
 
 @media only screen and (min-width: 450px) and (max-width: 920px) {
-    body {
-        margin-top: -15%;
-    }
 
     .help-section h1 {
 
