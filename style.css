@@ -1,13 +1,23 @@
+@font-face {
+    font-family: nunito;
+    src: url(fonts/Nunito-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: nunito;
+}
+
 .categories-section h1 {
     text-align: center;
     color: #289323;
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom: 5rem;
 }
 
 .category-items {
     display: flex;
     justify-content: space-evenly;
+    font-weight: lighter;
 }
 
 .category-items img {
@@ -18,31 +28,53 @@
 
 .category {
     justify-items: center;
-    line-height: 2;
-    font-size: 22px;
+    line-height: 1;
+    font-size: 28px;
+    color: #003A2A;
 }
+
+    .category h2{
+        font-size: 28px;
+    }
 
 #our-story {
     justify-items: center;
     margin: 5rem 0;
     font-size: 25px;
+    color: #003A2A;
 }
 
+/* linear-gradient(rgba(0, 58, 42, 0), rgba(0, 58, 42, 0.8)), */
 .community {
     height: 800px;
     width: 100%;
     align-content: end;
-    background-image: linear-gradient(rgba(0, 58, 42, 0), rgba(0, 58, 42, 0.8)), url('https://www.gainhealth.org/sites/default/files/2025-02/dsc07855.jpg');
+    background-image: url('https://www.gainhealth.org/sites/default/files/2025-02/dsc07855.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 3rem;
+    position: relative;
+    z-index: -1;
+}
+
+#curved {
+    position: absolute;
+    padding: 8%;
+    height: 20px;
+    width: 84%;
+    z-index: -1;
+    background-color: #003a29b2;
+    bottom:0;
+    border-top-left-radius: 150%;
+    border-top-right-radius: 150%;
 }
 
 .community h1 {
+    z-index: 1000;
     text-align: center;
-    padding-right: 10rem;
-    padding-bottom: 3rem;
+    padding-right: 15rem;
+    padding-bottom: 0.8rem;
     font-size: 70px;
     color: white;
     margin-left: 20rem;
@@ -54,16 +86,18 @@
 
 .users-story i {
     font-size: 150px;
+    color: #003A2A;
 }
 
 .users-story p {
     padding: 5rem 15rem;
-    font-size: 20px;
+    font-size: 28px;
+    color: #003A2A;
 }
 
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
     .category-items {
         padding: 1rem;
         flex-direction: column;
@@ -76,8 +110,7 @@
     }
 
 
-    .categories-section h1
-   {
+    .categories-section h1 {
         font-size: 2rem;
         text-align: center;
         margin: 1rem;
@@ -97,10 +130,14 @@
         min-height: 350px;
     }
 
+    #curved {
+       bottom:0;
+    }
+
     .community h1 {
-        font-size: 1.6rem;
-        padding-right: 0;
-        margin-left: 0;
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
     }
 
     .users-story p {
@@ -111,34 +148,92 @@
     .users-story i {
         font-size: 70px;
     }
+
+
 }
 
+@media only screen and (min-width:701px) and (max-width: 900px) {
+    .category-items {
+        padding: 1rem;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
 
-@media only screen and (min-width:901px) and (max-width: 1024px) {
-
+        h2 {
+            font-size: 25px;
+        }
+    }
+ #curved {
+        bottom:0;
+    }
 
     .community h1 {
         padding: 0;
         margin: 0;
+        font-size: 40px;
     }
 
     .users-story p {
         padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .users-story i {
+        font-size: 70px;
+    }
+
+
+}
+
+@media only screen and (min-width:901px) and (max-width: 1024px) {
+    .community {
+    height: 800px;
+    width: 100%;
+    margin-top: 3rem;
+    position: relative;
+    z-index: -1;
+}
+
+    .community h1 {
+padding: 0;
+    }
+  
+
+    .users-story p {
+        width:85%;
+        padding:1rem;
         text-align: justify;
+        font-size: 20px;
     }
 
     #contact-us {
         flex-direction: column;
     }
 
+
+    .community h1 {
+        font-size: 47px;
+        padding-right: 0;
+        padding-top: 2%;
+        margin-left: 0;
+        margin-bottom: 1%;
+    }
+    #curved{
+        bottom: 0;
+    }
+
+
 }
 
 
 @media only screen and (min-width:1025px) and (max-width: 1280px) {
 
-
     .categories-section {
         margin-left: -9%;
+    }
+ 
+    .community{
+        height: 100%;
     }
 
     .community h1 {
@@ -155,4 +250,12 @@
     .fa-users {
         margin-left: -9%;
     }
+        #curve{
+top: 50%;
+    }
 }
+
+
+
+
+
