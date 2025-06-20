@@ -1,15 +1,40 @@
- #why-choose {
+ 
+ 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: nunito;
+    src: url('fonts/Nunito-VariableFont_wght.ttf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #003A2A;
+    font-family: nunito;
+    font-size: 16px; 
+    width: 100%;
+    margin: auto;
+}
+#why-choose {
     justify-items: center;
     padding: 3rem;
 }
 #why-choose h1 {
-    font-size: 50px;
     margin-bottom: 7rem;
+    font-size: 50px;
 }
 
 .choose-options {
     display: flex;
     justify-content: space-evenly;
+    margin-left: -6rem;
 }
 .choose-options .fa-solid {
     font-size: 80px;
@@ -18,6 +43,7 @@
 .option {
     justify-items: center;
     text-align: center;
+    font-size: 22px;
 }
 .option h2 {
     color: #289323;
@@ -25,20 +51,26 @@
 }
 
 .option-txt {
-    width: 50%;
+    width: 58%;
+    font-size: 23px;
+    margin-left: 5rem;
+   
 }
 .option-text {
     width: 70%;
+    font-size: 23px;
+    
 }
 
 .how-it-works {
-    padding: 5rem 0 5rem 20rem;
+    padding: 5rem 0 1rem 10rem;
     align-content: center;
-    font-size: 50px;
+    font-size: 70px;
     margin-bottom: 5rem;
 
     h1{
           font-size: 50px;
+          margin-bottom: 50px;
     }
 }
 
@@ -50,17 +82,21 @@
     font-size: 20px;
 }
 
+
+.step h3{
+    font-size: 22px;
+}
 .circle {
     height: 75px;
     width: 75px;
     border-radius: 100px;
-    border: #003A2A solid 5px;
+    border: #003A2A solid 10px;
     justify-items: center;
     align-content: center;
     margin: 0.5rem;
 }
 .circle-1 {
-    border: #289323 solid 5px;
+    border: #289323 solid 10px;
     border-top: none;
 }
 .circle-2 {
@@ -72,6 +108,7 @@
     justify-content: space-between;
     align-items: center;
     align-self: center;
+    padding-left: 5rem;
 }
 
 .steps-prototype {
@@ -98,7 +135,21 @@
     margin-top: -3rem;
     transform: rotate(20deg);
 }
-@media only screen and (max-width: 900px){
+@media only screen and (min-width:550px) and (max-width: 900px){
+ .option-txt {
+   font-size: 25px;
+    margin-left: 0;
+   
+}
+.option-text{
+        font-size: 25px;
+         width: 100%;
+}
+
+
+  .steps{
+        margin-left: -12%;
+    }
 #why-choose h1,
     .categories-section h1,
     .how-it-works h1,
@@ -107,53 +158,148 @@
         text-align: center;
         margin: 1rem;
     }
+
     .option-txt,
     .option-text {
         width: 100%;
+     
+    }
+
+    .step h3{
+        font-size: 20px;
+        margin: 0;
     }
 .choose-options{
     flex-direction: column;
-}
-    .option {
-        justify-items: center;
-        text-align: center;
-    }
-    .option h2 {
-        color: #289323;
-        font-size: 20px;
-        margin: 1rem;
-    }
-    .option-txt {
-        width: 50%;
-    }
-    .option-text {
-        width: 70%;
-    }
+    gap: 30px;
+    margin-left: 0;
+   }
      .container {
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         width: 100%;
-        justify-items: center;
+        justify-items: left;
         gap: 1rem;
     }
     .steps-prototype {
         flex-direction: column;
         align-items: center;
+        justify-items: center;
         margin-left: 0;
+        padding: 0;
         width: 100%;
-        gap: 1rem;
+        background: none;
     }
     .steps-prototype img {
-        width: 80vw;
-        height: auto;
-        max-width: 250px;
-        margin: 0 auto;
+        display: block;
+        justify-self: center;
+        margin: 0 0 0 -5rem;
+         width: 100%;
+         height: 100%;
+    }
+     
+    .option h2{
+        font-size: 30px;
+    }
+
+
+    .step h3{
+        font-size: 20px;
+        margin: 0;
     }
     .first-page,
     .second-page,
     .third-page {
         width: 100%;
-        margin: 1rem 0 0 0;
+        margin: 0;
+        transform: none;
+       img{
+         box-shadow: 3px 2px 4px black;
+       }
+    }
+ .how-it-works {
+        padding: 2rem 0.5rem;
+        flex-direction: column;
+    }
+
+
+}
+@media only screen and (max-width: 556px){
+
+#why-choose h1,
+    .categories-section h1,
+    .how-it-works h1,
+    .help-section h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .option-txt,
+    .option-text {
+        width: 100%;
+     
+    }
+    .container {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .step h3{
+        font-size: 20px;
+        margin: 0;
+    }
+.choose-options{
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 0;
+   }
+  .option-txt {
+   font-size: 15px;
+    margin-left: 0;
+   
+}
+     .option-text{
+        font-size: 15px;
+         width: 100%;
+     }
+     .container {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+    .steps-prototype {
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        margin-left: 0;
+        padding: 0;
+        width: 100%;
+        background: none;
+    }
+    .steps-prototype img {
+        display: block;
+        justify-self: center;
+        margin: 0 0 0 -5rem;
+         width: 100%;
+         height: 100%;
+    }
+     
+    .option h2{
+        font-size: 30px;
+    }
+
+
+    .step h3{
+        font-size: 20px;
+        margin: 0;
+    }
+    .first-page,
+    .second-page,
+    .third-page {
+        width: 100%;
+        margin: 0;
         transform: none;
        img{
          box-shadow: 3px 2px 4px black;
@@ -164,14 +310,15 @@
         flex-direction: column;
     }
     .steps{
-        justify-self: center;
+        margin-left: -73.5%;
     }
 }
-@media only screen and (min-width:781px) and (max-width: 1024px){
+@media only screen and (min-width:901px) and (max-width: 1024px){
 .how-it-works{
         padding:5px;
         justify-items: center;
     }
+
     .first-page,
     .second-page,
     .third-page{
@@ -179,16 +326,61 @@
         margin-top: 3rem;
     }
     .steps-prototype{
+        width: 100%;
         gap:10px;
+        
+        
     }
+     .steps-prototype img{
+        align-self: center;
+        display: block;
+        margin-left: 50px;
+    }
+    
+  .option-text{
+      font-size: 20px;
+       width: 80%;
+    }
+    .option h2{
+        font-size: 30px;
+    }
+    .step h3{
+        font-size: 20px;
+        margin: 0;
+    }
+.choose-options{
+    margin-left: 0;
+   }
+
+  .option-txt {
+    font-size: 20px;
+    margin-left: 0;
+   
 }
+.container{
+    justify-self: left;
+}
+
+}
+
 @media only screen  and (min-width:1025px) and (max-width: 1280px){
     .how-it-works{
         padding: 3rem;
+        h1{
+            font-size: 50px;
+        }
     }
      .step {
         font-size: 15px;
     }
+    .step h3{
+    font-size: 8px;
+}
+    h1{
+          font-size:5px;
+          margin-bottom: 100px;
+    }
+
     .steps-prototype {
         border-radius: 50% / 100% 100% 0% 0%;
         width: 50%;
@@ -198,7 +390,32 @@
         height: 285px;
         width: 135px;
     }
-    .container {
-        margin-left: -4%;
+
+    .option-txt{
+      font-size: 18px;
+       width: 80%;
     }
+     .option-text{
+    font-size: 18px;
+ }
+    .option h2{
+        font-size: 30px;
+    }
+
+
+    .step h3{
+        font-size: 20px;
+        margin: 0;
+    }
+    #why-choose h1{
+        font-size: 60px;
+    }
+    .choose-options{
+    margin-left: 0;
+   }
+     .option-txt {
+   
+    margin-left: 0;
+   
+}
 }
