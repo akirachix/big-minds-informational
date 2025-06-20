@@ -16,9 +16,462 @@ html {
 body {
     color: #003A2A;
     font-family: nunito;
-    font-size: 16px; 
+    font-size: 16px;
+    width: 100%;
+    margin: auto;
 }
 
+#why-choose {
+    justify-items: center;
+    padding: 3rem;
+}
+
+#why-choose h1 {
+    margin-bottom: 7rem;
+    font-size: 50px;
+}
+
+.choose-options {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -6rem;
+}
+
+.choose-options .fa-solid {
+    font-size: 80px;
+}
+
+.option {
+    justify-items: center;
+    text-align: center;
+    font-size: 22px;
+}
+
+.option h2 {
+    color: #289323;
+    margin: 1rem;
+}
+
+.option-txt {
+    width: 58%;
+    font-size: 23px;
+    margin-left: 5rem;
+
+}
+
+.option-text {
+    width: 70%;
+    font-size: 23px;
+
+}
+
+.how-it-works {
+    padding: 5rem 0 1rem 10rem;
+    align-content: center;
+    font-size: 70px;
+    margin-bottom: 5rem;
+
+    h1 {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+.step {
+    align-self: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+.step h3 {
+    font-size: 22px;
+}
+
+.circle {
+    height: 75px;
+    width: 75px;
+    border-radius: 100px;
+    border: #003A2A solid 10px;
+    justify-items: center;
+    align-content: center;
+    margin: 0.5rem;
+}
+
+.circle-1 {
+    border: #289323 solid 10px;
+    border-top: none;
+}
+
+.circle-2 {
+    border-right: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    padding-left: 5rem;
+}
+
+.steps-prototype {
+    background-color: rgb(0, 58, 42);
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+    padding: 3rem;
+    width: 60%;
+    border-radius: 50% / 100% 100% 0% 0%;
+}
+
+.steps-prototype img {
+    height: 300px;
+    width: 150px;
+}
+
+.first-page {
+    margin-top: -3rem;
+    transform: rotate(-20deg);
+}
+
+.second-page {
+    margin-top: -7rem;
+}
+
+.third-page {
+    margin-top: -3rem;
+    transform: rotate(20deg);
+}
+
+
+
+@media only screen and (min-width:551px) and (max-width: 900px) {
+    .option-txt {
+        font-size: 25px;
+        margin-left: 0;
+
+    }
+
+    .option-text {
+        font-size: 25px;
+        width: 100%;
+    }
+
+
+    .steps {
+        margin-left: -35%;
+    }
+
+    #why-choose h1,
+    .categories-section h1,
+    .how-it-works h1,
+    .help-section h1 {
+      
+        .option-txt,
+        .option-text {
+            width: 100%;
+
+        }
+    }
+    .how-it-works h1{
+        text-align: center;
+    }
+        .step h3 {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .choose-options {
+            flex-direction: column;
+            gap: 30px;
+            margin-left: 0;
+        }
+
+        .container {
+            flex-direction: column;
+            align-items: left;
+            width: 100%;
+            justify-items: left;
+            gap: 1rem;
+        }
+
+        .steps-prototype {
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            margin-left: 0;
+            padding: 0;
+            width: 100%;
+            background: none;
+        }
+
+        .steps-prototype img {
+            display: block;
+            justify-self: center;
+            margin: 0 0 0 -5rem;
+            width: 50%;
+            height: 5%;
+        }
+
+        .option h2 {
+            font-size: 20px;
+        }
+
+        .option p {
+            font-size: 18px;
+        }
+
+
+        .step h3 {
+            font-size: 20px;
+        }
+
+        .first-page,
+        .second-page,
+        .third-page {
+            margin-top: 5px;
+            transform: none;
+            width: 80%;
+            margin-right: 20%;
+            img {
+                box-shadow: 3px 2px 4px black;
+            }
+        }
+
+        .how-it-works {
+            padding: 2rem 0.5rem;
+            flex-direction: column;
+        }
+
+
+    }
+
+    @media only screen and (max-width: 550px) {
+
+        #why-choose h1,
+        .categories-section h1,
+        .how-it-works h1,
+        .help-section h1 {
+            font-size: 2rem;
+            text-align: center;
+            margin: 1rem;
+        }
+
+        .option-txt,
+        .option-text {
+            width: 100%;
+
+        }
+
+        .container {
+            flex-direction: column;
+            width: 100%;
+            gap: 1rem;
+        }
+
+        .step h3 {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .choose-options {
+            flex-direction: column;
+            gap: 30px;
+            margin-left: 0;
+        }
+
+        .option-txt {
+            font-size: 15px;
+            margin-left: 0;
+
+        }
+
+        .option-text {
+            font-size: 15px;
+            width: 100%;
+        }
+
+        .container {
+            flex-direction: column;
+            width: 100%;
+            gap: 1rem;
+        }
+
+        .steps-prototype {
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            margin-left: 0;
+            padding: 0;
+            width: 100%;
+            background: none;
+        }
+
+        .steps-prototype img {
+            display: block;
+            justify-self: center;
+            margin: 0 0 0 -5rem;
+            width: 100%;
+            height: 100%;
+        }
+
+        .option h2 {
+            font-size: 30px;
+        }
+
+
+        .step h3 {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .first-page,
+        .second-page,
+        .third-page {
+            width: 100%;
+            margin: 0;
+            transform: none;
+
+            img {
+                box-shadow: 3px 2px 4px black;
+            }
+        }
+
+        .how-it-works {
+            padding: 2rem 0.5rem;
+            flex-direction: column;
+        }
+
+        .steps {
+            margin-left: -73.5%;
+        }
+    }
+
+    @media only screen and (min-width:901px) and (max-width: 1024px) {
+        .how-it-works {
+            padding: 5px;
+            justify-items: center;
+        }
+
+        .first-page,
+        .second-page,
+        .third-page {
+            transform: none;
+            margin-top: 3rem;
+        }
+
+        .steps-prototype {
+            width: 100%;
+            gap: 10px;
+
+
+        }
+
+        .steps-prototype img {
+            align-self: center;
+            display: block;
+            margin-left: 50px;
+        }
+
+        .option-text {
+            font-size: 20px;
+            width: 80%;
+        }
+
+        .option h2 {
+            font-size: 30px;
+        }
+
+        .step h3 {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .choose-options {
+            margin-left: 0;
+        }
+
+        .option-txt {
+            font-size: 20px;
+            margin-left: 0;
+
+        }
+
+        .container {
+            justify-self: left;
+        }
+
+    }
+
+    @media only screen and (min-width:1025px) and (max-width: 1280px) {
+        .how-it-works {
+            padding: 3rem;
+
+            h1 {
+                font-size: 50px;
+            }
+        }
+
+        .step {
+            font-size: 15px;
+        }
+
+        .step h3 {
+            font-size: 8px;
+        }
+
+        h1 {
+            font-size: 5px;
+            margin-bottom: 100px;
+        }
+
+        .steps-prototype {
+            border-radius: 50% / 100% 100% 0% 0%;
+            width: 50%;
+            padding-left: -4%;
+        }
+
+        .steps-prototype img {
+            height: 285px;
+            width: 135px;
+        }
+
+        .option-txt {
+            font-size: 18px;
+            width: 80%;
+        }
+
+        .option-text {
+            font-size: 18px;
+        }
+
+        .option h2 {
+            font-size: 30px;
+        }
+
+
+        .step h3 {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        #why-choose h1 {
+            font-size: 60px;
+        }
+
+        .choose-options {
+            margin-left: 0;
+        }
+
+        .option-txt {
+
+            margin-left: 0;
+
+        }
+    }
 nav {
     display: flex;
     justify-content: space-between;
@@ -28,9 +481,11 @@ nav {
     padding: 0.5% 3%;
     background-color: white;
 }
-.nav-bar{
+
+.nav-bar {
     position: relative;
 }
+
 .nav-bar ul {
     display: flex;
     list-style-type: none;
@@ -43,11 +498,12 @@ nav {
     color: #003A2A;
     cursor: pointer;
 }
+
 .nav-bar a:active {
     color: #289323;
 }
 
-.hamburger{
+.hamburger {
     display: none;
 }
 
@@ -72,6 +528,7 @@ nav {
     justify-content: space-between;
     margin: 2rem 6rem;
 }
+
 .hero h1 {
     font-size: 110px;
 }
@@ -79,6 +536,7 @@ nav {
 .hero-title {
     margin-top: 5rem;
 }
+
 .hero-title p {
     font-size: 40px;
     padding-right: 25%;
@@ -100,6 +558,7 @@ nav {
     background-color: #003A2A;
     color: white;
 }
+
 .shop-now-btn:hover,
 .categories-btn:hover {
     cursor: pointer;
@@ -121,9 +580,11 @@ nav {
 .google-play {
     align-self: center;
 }
+
 .google-play img {
     height: 35px;
 }
+
 .google-play p {
     font-size: 40px;
 }
@@ -132,9 +593,10 @@ nav {
     color: #289323;
 }
 
-.fresh-groceries{
+.fresh-groceries {
     margin-left: 4rem;
 }
+
 .playstore {
     font-size: 48px;
     font-weight: bolder;
@@ -145,6 +607,7 @@ nav {
     margin-top: -10rem;
     gap: 50px;
 }
+
 .prototype img {
     height: 300px;
     width: 150px;
@@ -153,9 +616,11 @@ nav {
 .orders {
     transform: rotate(-20deg);
 }
+
 .cart {
     transform: rotate(20deg);
 }
+
 .safi-greens-home {
     z-index: 100;
     margin-top: -3rem;
@@ -198,7 +663,6 @@ nav {
     color: #003A2A;
 }
 
-/* linear-gradient(rgba(0, 58, 42, 0), rgba(0, 58, 42, 0.8)), */
 .community {
     height: 800px;
     width: 100%;
@@ -351,14 +815,7 @@ nav {
 }
 
 
-@media only screen and (width:344px) {
-    .google-play p {
-        font-size: 18px;
-    }
-    .fresh-groceries{
-        margin-left: 1rem;
-    }
-}
+
 
 
 @media only screen and (max-width: 700px) {
@@ -368,9 +825,6 @@ nav {
         gap: 1rem;
         align-items: center;
 
-        h2 {
-            font-size: 25px;
-        }
     }
 
 
@@ -401,7 +855,7 @@ nav {
     .community h1 {
         padding: 0;
         margin: 0;
-        font-size: 20px;
+        font-size: 10px;
     }
 
     .users-story p {
@@ -412,9 +866,10 @@ nav {
     .users-story i {
         font-size: 70px;
     }
-
-
 }
+
+
+
 
 @media only screen and (max-width: 900px) {
 
@@ -422,83 +877,93 @@ nav {
     body {
         overflow-x: hidden;
     }
+
     .header-logo img {
         height: 60px;
         margin-top: 0;
     }
-        .nav-bar ul {
-            display: none;
-            flex-direction: column;
-            position: fixed;        
-            top: 0;                
-            left: 0;
-            width: 100vw;           
-            background: white;      
-            gap: 15px;
-            padding: 3rem 0 1rem 0;
-            /* margin: 0; */
-            /* z-index: 999; */
-            align-items: center;
-            justify-content: flex-start;
-        }
-        .nav-bar ul.show {
-            display: flex;
-        }
 
-        .hamburger {
-            display: block;
-            margin-top: 15px;
-            font-size: 25px;
-            position: relative;
-            z-index: 1001;           
-        }
-        .nav-bar ul a {
-            font-size: 1.2rem;
-            width: 100vw;
-            text-align:left;
-            padding:0.2rem 1rem;
-            display: block;
-        }
-        .nav-bar ul li {
-            font-size: 15px;
-            width: 100vw;
-            text-align: center;
-        }
+    .nav-bar ul {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background: white;
+        gap: 15px;
+        padding: 3rem 0 1rem 0;
+        align-items: center;
+        justify-content: flex-start;
+    }
 
-    .download{
+    .nav-bar ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        margin-top: 15px;
+        font-size: 25px;
+        position: relative;
+        z-index: 1001;
+    }
+
+    .nav-bar ul a {
+        font-size: 1.2rem;
+        width: 100vw;
+        text-align: left;
+        padding: 0.2rem 1rem;
+        display: block;
+    }
+
+    .nav-bar ul li {
+        font-size: 15px;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .download {
         margin-top: 9rem;
     }
+
     .hero {
         flex-direction: column-reverse;
         margin: 2rem 1rem;
         align-items: center;
     }
+
     .hero img {
         width: 90%;
         margin: 0 auto;
         display: block;
     }
-    .hero-title{
+
+    .hero-title {
         margin-top: 1rem;
     }
+
     .hero-title h1 {
         font-size: 40px;
         text-align: center;
         padding: 0;
     }
+
     .hero-title p {
         font-size: 1rem;
         width: 100%;
-        margin:0;
+        margin: 0;
         padding: 0;
         text-align: center;
     }
+
     .hero-btn {
         margin: 2rem 0 0 0;
         font-size: 1rem;
         display: block;
         justify-self: center;
     }
+
     .download {
         margin-top: 60%;
         flex-direction: column;
@@ -506,30 +971,37 @@ nav {
         background: none;
         padding: 1rem;
         margin: 1rem 0 0 0;
-        div{
+
+        div {
             transform: rotate(0);
         }
     }
+
     .google-play p {
         font-size: 20px;
         color: #003A2A;
         justify-self: center;
         margin-top: 5px;
     }
+
     .google-play img {
         height: 20px;
     }
-    .playstore{
+
+    .playstore {
         font-size: 20px;
     }
-    .prototype{
+
+    .prototype {
         flex-direction: column;
         margin-top: 2rem;
     }
+
     .prototype img {
         height: 500px;
         width: 250px;
     }
+
     .category-items {
         padding: 1rem;
         display: flex;
@@ -545,15 +1017,11 @@ nav {
         bottom: 0;
     }
 
-    .community h1 {
-        padding: 0;
-        margin: 0;
-        font-size: 40px;
-    }
+
 
     .users-story p {
         padding: 1rem;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
 
     .users-story i {
@@ -562,54 +1030,68 @@ nav {
 }
 
 @media only screen and (min-width:901px) and (max-width: 1024px) {
+
     html,
     body {
         overflow-x: hidden;
     }
+
     .nav-bar ul li {
         font-size: 20px;
     }
-    .header-logo img{
+
+    .header-logo img {
         height: 60px;
         margin-top: -2px;
     }
-    .hero{
+
+    .hero {
         justify-content: space-between;
-        margin:2rem;
+        margin: 2rem;
     }
-    .hero h1{
+
+    .hero h1 {
         font-size: 60px;
     }
-    .hero-title p{
+
+    .hero-title p {
         padding: 0;
         font-size: 25px;
         margin-left: 0;
     }
-    .hero img{
-        margin:2rem 0;
+
+    .hero img {
+        margin: 2rem 0;
     }
-    .hero-btn{
+
+    .hero-btn {
         margin: 30px 10px 0 0;
-        padding:10px 30px;
+        padding: 10px 30px;
         font-size: 15px;
     }
-    .download{
+
+    .download {
         flex-direction: column;
         justify-items: center;
         padding: 5rem 8rem;
     }
-    .prototype{
-        margin:-10rem 3rem 3rem;
+
+    .prototype {
+        margin: -10rem 3rem 3rem;
     }
-    .google-play p{
+
+    .google-play p {
         font-size: 25px;
     }
-    .playstore{
+
+    .playstore {
         font-size: 35px;
     }
-    .fresh-groceries{
+
+    .fresh-groceries {
         margin-left: 2rem;
     }
+
     .community {
         height: 800px;
         width: 100%;
@@ -620,6 +1102,8 @@ nav {
 
     .community h1 {
         padding: 0;
+        margin: 0;
+        font-size: 35px;
     }
 
 
@@ -635,25 +1119,18 @@ nav {
     }
 
 
-    .community h1 {
-        font-size: 47px;
-        padding-right: 0;
-        padding-top: 2%;
-        margin-left: 0;
-        margin-bottom: 1%;
-    }
-
+.users-story p{
+    font-size: 30px;
+}
     #curved {
         bottom: 0;
     }
 
-        .help-section h1 {
+    .help-section h1 {
 
         font-size: 40px;
 
     }
-
-
 
     .faq-answer {
         width: 100%;
@@ -663,67 +1140,102 @@ nav {
 
 }
 
+@media only screen and (min-width:600px) and (max-width:900px){
+       .community h1{
+        font-size: 80px;
+
+    }
+    .users-story p{
+        font-size: 30px;
+    }
+}
 
 @media only screen and (min-width:1025px) and (max-width: 1280px) {
-    html,body{
+
+    html,
+    body {
         overflow-x: hidden;
     }
-    .header-logo img{
+
+    .header-logo img {
         height: 65px;
     }
+
     .hero-title p {
         font-size: 1.5rem;
         margin: 0;
-        padding-right:0 ;
+        padding-right: 0;
     }
+
     .nav-bar ul li {
         font-size: 20px;
     }
-    .hero img{
+
+    .hero img {
         margin-left: 0;
         margin-top: 0.5rem;
-        width:100%;
+        width: 100%;
     }
+
     .hero h1 {
         font-size: 60px;
     }
-    .download{
-        margin-top:20rem ;
+
+    .download {
+        margin-top: 20rem;
     }
-    .hero-btn{
+
+    .hero-btn {
         margin: 3rem 2rem 0 0;
     }
+
     .google-play p {
         font-size: 18px;
     }
-    .playstore{
+
+    .playstore {
         font-size: 22px;
     }
+
     .google-play img {
         height: 20px;
     }
-    .fresh-groceries{
+
+    .fresh-groceries {
         margin-left: 2rem;
     }
 
 
     .categories-section {
         margin-left: -9%;
+        align-items: center;
     }
 
     .community {
-        height: 100%;
+        height: 800px;
     }
 
     .community h1 {
-        font-size: 60px;
+        /* top: 20rem; */
+        margin-bottom: 0;
+        margin-left: 7%;
+        font-size: 50px;
         width: 100%;
-        margin-left: 15%;
+        text-align: center;
+    }
+
+    #our-story > h1{
+        font-size: 50px;
     }
 
     .users-story p {
+        width: 120%;
+        padding-left: 20%;
+    }
+    .users-story h1 {
         width: 135%;
-        padding-left: 28%;
+        padding-left: 20%;
+        font-size: 1000px;
     }
 
     .fa-users {
@@ -752,6 +1264,7 @@ nav {
     .community {
         width: 99%;
     }
+  
 
     .faq-answer {
         width: 100%;
@@ -804,6 +1317,7 @@ nav {
 
     }
 }
+
 
 @media only screen and (min-width: 300px) and (max-width: 916px) {
     .help-section h1 {
@@ -860,4 +1374,30 @@ nav {
 }
 
 
+@media only screen and (min-width:344px) and (max-width: 860px) {
+    .community h1{
+        font-size: 18px;
+    }
+    .users-story p{
+         font-size: 18px;
+    }
+    .google-play p {
+        font-size: 18px;
+    }
 
+    .fresh-groceries {
+        margin-left: 1rem;
+    }
+    
+}
+
+@media only screen and (min-width:601px) and (max-width:900px){
+       .community h1{
+        font-size: 27px;
+        width: 100%;
+        margin-left: 9%;
+    }
+    .users-story p{
+        font-size: 25px;
+    }
+}
