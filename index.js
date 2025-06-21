@@ -23,3 +23,26 @@ function toggleFaq(element) {
         icon.classList.add("fa-minus");
     }
 }
+
+const navLinks = document.querySelectorAll('#nav-menu a');
+navLinks.forEach(
+    function(link) {
+    link.addEventListener('click', function(){
+            const menu = document.getElementById('nav-menu');
+            let hamburger = document.getElementById('hamburger');
+            menu.classList.remove('show');
+            hamburger.innerHTML = '&#9776';
+        })
+    }
+)
+
+document.addEventListener('click', function(event) {
+    const nav = document.getElementById('nav-menu');
+    const hamburger = document.getElementById('hamburger');
+    if (nav.classList.contains('show') &&
+        !nav.contains(event.target) &&
+        !hamburger.contains(event.target)) {
+        nav.classList.remove('show');
+        hamburger.innerHTML = '&#9776;';
+    }
+});
