@@ -1,204 +1,153 @@
- #why-choose {
-    justify-items: center;
-    padding: 3rem;
-}
-#why-choose h1 {
-    font-size: 50px;
-    margin-bottom: 7rem;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.choose-options {
-    display: flex;
-    justify-content: space-evenly;
-}
-.choose-options .fa-solid {
-    font-size: 80px;
+@font-face {
+  font-family: nunito;
+  src: url(fonts/Nunito-VariableFont_wght.ttf);
 }
 
-.option {
-    justify-items: center;
-    text-align: center;
-}
-.option h2 {
-    color: #289323;
-    margin: 1rem;
+body {
+  color: #003A2A;
+  font-family: nunito;
+  font-size: 16px;
+
 }
 
-.option-txt {
-    width: 50%;
-}
-.option-text {
-    width: 70%;
+a,
+li {
+  cursor: pointer;
 }
 
-.how-it-works {
-    padding: 5rem 0 5rem 20rem;
-    align-content: center;
-    font-size: 50px;
-    margin-bottom: 5rem;
+.footer-container {
+  background-color: #003A2A;
+}
 
-    h1{
-          font-size: 50px;
+.footer-container p {
+  font-size: 15px;
+}
+
+.footer {
+  line-height: 1.6;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem 0;
+}
+
+.footer h2 {
+  font-size: 20px;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer ul li {
+  font-size: 15px;
+}
+
+.footer ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.social div {
+  display: grid;
+  display: flex;
+  gap: 10px;
+}
+
+.social div i {
+  font-size: 20px;
+}
+
+.copy-right {
+
+  border-top: white solid 3px;
+  color: white;
+  padding: 2rem;
+  font-size: 15px;
+}
+
+.copy-right p{
+  text-align: center;
+
+}
+
+@media only screen and (max-width: 820px) {
+    .footer-container {
+        justify-items: left;
+        padding: 60px;
     }
-}
-
-.step {
-    align-self: center;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    font-size: 20px;
-}
-
-.circle {
-    height: 75px;
-    width: 75px;
-    border-radius: 100px;
-    border: #003A2A solid 5px;
-    justify-items: center;
-    align-content: center;
-    margin: 0.5rem;
-}
-.circle-1 {
-    border: #289323 solid 5px;
-    border-top: none;
-}
-.circle-2 {
-    border-right: none;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-self: center;
-}
-
-.steps-prototype {
-    background-color: rgb(0, 58, 42);
-    justify-content: center;
-    display: flex;
-    gap: 50px;
-    padding: 3rem;
-    width: 60%;
-    border-radius: 50% / 100% 100% 0% 0%;
-}
-.steps-prototype img {
-    height: 300px;
-    width: 150px;
-}
-.first-page {
-    margin-top: -3rem;
-    transform: rotate(-20deg);
-}
-.second-page {
-    margin-top: -7rem;
-}
-.third-page {
-    margin-top: -3rem;
-    transform: rotate(20deg);
-}
-@media only screen and (max-width: 900px){
-#why-choose h1,
-    .categories-section h1,
-    .how-it-works h1,
-    .help-section h1 {
-        font-size: 2rem;
-        text-align: center;
-        margin: 1rem;
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
     }
-    .option-txt,
-    .option-text {
-        width: 100%;
-    }
-.choose-options{
-    flex-direction: column;
-}
-    .option {
-        justify-items: center;
-        text-align: center;
-    }
-    .option h2 {
-        color: #289323;
+        .footer h2{
         font-size: 20px;
-        margin: 1rem;
     }
-    .option-txt {
-        width: 50%;
-    }
-    .option-text {
-        width: 70%;
-    }
-     .container {
-        flex-direction: column;
+    .copy-right {
+        border-top: white solid 3px;
+        color: white;
+        margin: auto;
         align-items: center;
-        width: 100%;
-        justify-items: center;
-        gap: 1rem;
+        font-size: 10px;
     }
-    .steps-prototype {
-        flex-direction: column;
+}
+@media only screen and (min-width: 701px) and (max-width: 900px) {
+  .social img{
+    justify-content: left;
+
+  }
+
+    .footer {
+        text-align: left;
+        justify-content: left;
+        align-items: start;
+    }
+    .footer h2{
+        font-size: 20px;
+    }
+ }
+
+@media only screen and (min-width: 901px) and (max-width: 1024px) {
+    .footer-container {
+        justify-content: space-between;
+    }
+    .footer {
+        text-align: left;
+    }
+    .footer h2{
+        font-size: 20px;
+    }
+    .copy-right {
+        border-top: white solid 3px;
+        color: white;
+        margin: auto;
         align-items: center;
-        margin-left: 0;
-        width: 100%;
-        gap: 1rem;
+        /* padding: 2rem; */
+        font-size: 10px;
     }
-    .steps-prototype img {
-        width: 80vw;
-        height: auto;
-        max-width: 250px;
-        margin: 0 auto;
+ }
+
+ @media only screen and (min-width: 300px) and (max-width: 450px) {
+    .footer-container {
+        justify-content: space-between;
     }
-    .first-page,
-    .second-page,
-    .third-page {
-        width: 100%;
-        margin: 1rem 0 0 0;
-        transform: none;
-       img{
-         box-shadow: 3px 2px 4px black;
-       }
+    .footer {
+        text-align: left;
     }
- .how-it-works {
-        padding: 2rem 0.5rem;
-        flex-direction: column;
+    .footer h2{
+        font-size: 20px;
     }
-    .steps{
-        justify-self: center;
+    .copy-right {
+        border-top: white solid 3px;
+        color: white;
+        margin: auto;
+        align-items: center;
+        font-size: 10px;
     }
-}
-@media only screen and (min-width:781px) and (max-width: 1024px){
-.how-it-works{
-        padding:5px;
-        justify-items: center;
-    }
-    .first-page,
-    .second-page,
-    .third-page{
-        transform: none;
-        margin-top: 3rem;
-    }
-    .steps-prototype{
-        gap:10px;
-    }
-}
-@media only screen  and (min-width:1025px) and (max-width: 1280px){
-    .how-it-works{
-        padding: 3rem;
-    }
-     .step {
-        font-size: 15px;
-    }
-    .steps-prototype {
-        border-radius: 50% / 100% 100% 0% 0%;
-        width: 50%;
-        padding-left: -4%;
-    }
-    .steps-prototype img {
-        height: 285px;
-        width: 135px;
-    }
-    .container {
-        margin-left: -4%;
-    }
-}
+ }
