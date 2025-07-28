@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    font-family: nunito;
+    color: #003A2A;
+}
+
+.main{
+    width: 60%;
+    margin: auto;
+}
+
+.header-logo img {
+    margin-top: -10px;
+}
+
+.container img{
+    width: 20%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.3% 3%;
+    background-color: white;
+  }
+  
+  .nav-bar {
+    position: relative;
+  }
+  
+  .nav-bar ul {
+    display: flex;
+    list-style-type: none;
+    gap: 60px;
+    margin-top: 1.5rem;
+  }
+  
+  .nav-bar a {
+    text-decoration: none;
+    color: #003A2A;
+    cursor: pointer;
+  }
+  
+  .nav-bar a:active {
+    color: #289323;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  
+  .header-logo img {
+    margin-top: -10px;
+  }
+  
+  .nav-bar ul li {
+    font-size: 25px;
+  }
+
+.step-num{
+    background-color: #003A2A;
+    font-size: 20px;
+    border-radius: 50px;
+    align-content: center;
+    text-align: center;
+    width: 50px;
+    height:50px;
+    color:white;
+    font-weight: bolder;
+    justify-self: center;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    img{
+        display: block;
+    }
+}
+.user-title{
+    color: #289323;
+    display: inline;
+    padding-bottom: 5em;
+}
+
+.user-title-container{
+    margin-bottom: 3em;
+    line-height: 3;
+    img{
+        display: block;
+        width:50%;
+        justify-self: center;
+        border-radius: 20px;
+    }
+}
+.footer{
+    background-color: #003A2A;
+    color: white;
+    justify-items: center;
+    padding: 0.5em;
+    width: 100%;
+    margin-top: 5em;
+}
+.container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5em;
+    line-height: 1.8;
+    >div{
+        width: 50%;
+    }
+}
+
+.title{
+    justify-items: center;
+    margin-bottom:2em ;
+    h1{
+        font-size: 40px;
+    }
+}
+
+.step-container{
+    justify-items: center;
+    border-bottom: #289323 solid 2px;
+}
+
+.left-container{
+    flex-direction: row;
+}
+.container li{
+    font-size: 20px;
+}
+.right-container{
+    flex-direction: row-reverse;
+}
+.container h3{
+    font-size: 25px;
+}
+h3{
+    color: #289323;
+    text-align: center;
+}
+.btn{
+    display: flex;
+    gap:50px;
+    justify-content: center;
+    h3{
+        color: white;
+    }
+    button{
+        padding: 0.8em 3em;
+        border-radius: 20px;
+        background-color: #289323;
+        border: none;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+.tips{
+    h1{
+        display: inline;
+        border-bottom: #289323 solid 3px;
+    }
+    ul{
+        margin-top: 2em;
+    }
+    li{
+        font-size: 20px;
+    }
+    .step-container{
+        border: none;
+    }
+}
+@font-face {
+    font-family: nunito;
+    src: url('fonts/Nunito-VariableFont_wght.ttf');
+}
+
+
+@media only screen and (max-width: 550px){
+    .main{
+        width: 100%;
+        padding: 3em;
+    }
+    .nav-bar ul {
+        display: none;
+        flex-direction: column;
+        position: fixed;        
+        top: 0;                
+        left: 0;
+        width: 100vw;           
+        background: white;      
+        gap: 15px;
+        padding: 3rem 0 1rem 0;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .nav-bar ul.show {
+        display: flex;
+    }
+    .nav-bar ul a {
+        font-size: 1.2rem;
+        width: 100vw;
+        text-align:left;
+        padding:0.2rem 1rem;
+        display: block;
+    }
+    .nav-bar ul li {
+        font-size: 15px;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+        margin-top: 15px;
+        font-size: 25px;
+        position: relative;
+        z-index: 1001;           
+    }
+    .title{
+        margin-top: 1em;
+        margin-bottom: 0;
+        h1{
+            font-size: 30px;
+        }
+    }
+    .container h3{
+        font-size: 20px;
+    }
+    .container li{
+        font-size: 20px;
+    }
+    .user-title-container
+        img{
+            width:60%;
+            justify-self: center;
+            border-radius: 20px;
+        }
+    .image-container
+        img{
+            width: 30%;
+            display: block;
+        }
+    .container{
+        flex-direction: column;
+        gap:50px;
+        >div{
+            width: 100%;
+        }
+    }
+    h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .footer{
+        font-size: small;
+        text-align: center;
+    }
+    .btn{
+        flex-direction: column;
+        gap: 10px;
+        button{
+            justify-self: center;
+            display: block;
+        }
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 900px){
+    .main{
+        width: 100%;
+        padding: 3em;
+    }
+    .nav-bar ul {
+        display: none;
+        flex-direction: column;
+        position: fixed;        
+        top: 0;                
+        left: 0;
+        width: 100vw;           
+        background: white;      
+        gap: 15px;
+        padding: 3rem 0 1rem 0;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .nav-bar ul.show {
+        display: flex;
+    }
+    .nav-bar ul a {
+        font-size: 1.2rem;
+        width: 100vw;
+        text-align:left;
+        padding:0.2rem 1rem;
+        display: block;
+    }
+    .nav-bar ul li {
+        font-size: 15px;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+        margin-top: 15px;
+        font-size: 25px;
+        position: relative;
+        z-index: 1001;           
+    }
+    .title{
+        margin-top: 1em;
+        margin-bottom: 0;
+        h1{
+            font-size: 35px;
+        }
+    }
+    .container h3{
+        font-size: 20px;
+    }
+    .container li{
+        font-size: 16px;
+    }
+    .user-title-container
+        img{
+            width:60%;
+            justify-self: center;
+            border-radius: 20px;
+        }
+    .image-container
+        img{
+            width: 25%;
+            display: block;
+        }
+}
+
+@media only screen and (min-width:901px) and (max-width: 1024px) {
+    .nav-bar ul li {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:1025px) and (max-width: 1280px){
+    .nav-bar ul li {
+        font-size: 20px;
+    }
+}

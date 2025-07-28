@@ -57,7 +57,9 @@ li {
 .social div {
   display: grid;
   display: flex;
-  gap: 10px;
+  gap: 10px;}
+.hero h1 {
+    font-size: 80px;
 }
 
 .social div i {
@@ -74,7 +76,22 @@ li {
 
 .copy-right p {
   text-align: center;
+}
+.hero-title p {
+    font-size: 30px;
+    padding-right: 25%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
 
+.hero-btn {
+    padding: 0.7rem 3.5rem;
+    font-family: nunito;
+    border-radius: 50px;
+    font-size: 20px;
+    border: none;
+    font-weight: bolder;
+    margin: 3rem 1rem 0;
 }
 
 @media only screen and (max-width: 820px) {
@@ -127,6 +144,15 @@ li {
   .footer {
     text-align: left;
   }
+.google-play {
+    align-self: center;
+}
+.google-play img {
+    height: 35px;
+}
+.google-play p {
+    font-size: 30px;
+}
 
   .footer h2 {
     font-size: 20px;
@@ -140,8 +166,14 @@ li {
     /* padding: 2rem; */
     font-size: 10px;
   }
+.fresh-groceries{
+    margin-left: 4rem;
 }
-
+.playstore {
+    font-size: 40px;
+    font-weight: bolder;
+} 
+}
 @media only screen and (min-width: 300px) and (max-width: 450px) {
   .footer-container {
     justify-content: space-between;
@@ -154,6 +186,12 @@ li {
   .footer h2 {
     font-size: 20px;
   }
+.categories-section h1 {
+    text-align: center;
+    color: #289323;
+    font-size: 50px;
+    margin: 5rem;
+}
 
   .copy-right {
     border-top: white solid 3px;
@@ -167,13 +205,23 @@ li {
 
 
 
-
-
-html {
-  scroll-behavior: smooth;
+.category {
+    justify-items: center;
+    line-height: 1;
+    font-size: 25px;
+    color: #003A2A;
 }
 
+.category h2 {
+    font-size: 25px;
+}
 
+#our-story {
+    justify-items: center;
+    margin: 5rem 0;
+    font-size: 22px;
+    color: #003A2A;
+}
 
 #why-choose {
   justify-items: center;
@@ -182,7 +230,15 @@ html {
 
 #why-choose h1 {
   margin-bottom: 7rem;
-  font-size: 50px;
+  font-size: 50px;}
+.community h1 {
+    z-index: 1000;
+    text-align: center;
+    padding-right: 15rem;
+    padding-bottom: 0.8rem;
+    font-size: 40px;
+    color: white;
+    margin-left: 20rem;
 }
 
 .choose-options {
@@ -203,14 +259,27 @@ html {
 
 .option h2 {
   color: #289323;
-  margin: 1rem;
+  margin: 1rem;}
+.users-story p {
+    padding: 5rem 15rem;
+    font-size: 25px;
+    color: #003A2A;
+}
+
+.light-green{
+    color:#289323;
 }
 
 .option-txt {
   width: 58%;
   font-size: 23px;
   margin-left: 5rem;
-
+}
+.help-section h1 {
+    justify-self: center;
+    font-size: 50px;
+    margin-bottom: 5rem;
+    color: #0d3c28;
 }
 
 .option-text {
@@ -222,13 +291,12 @@ html {
 .how-it-works {
   padding: 5rem 0 1rem 10rem;
   align-content: center;
-  font-size: 70px;
-  margin-bottom: 5rem;
-
-  h1 {
-    font-size: 50px;
-    margin-bottom: 50px;
-  }
+  font-size: 30px;
+  margin-bottom: 5rem;}
+.help h2 {
+    margin-top: 1rem;
+    color: #0d3c28;
+    font-size: 25px;
 }
 
 .step {
@@ -241,7 +309,12 @@ html {
 
 
 .step h3 {
-  font-size: 22px;
+  font-size: 22px;}
+#faq-container h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #0d3c28;
+    font-size: 35px;
 }
 
 .circle {
@@ -256,7 +329,17 @@ html {
 
 .circle-1 {
   border: #289323 solid 10px;
-  border-top: none;
+  border-top: none;}
+.faq-question {
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    font-size: 25px;
+    color: #0d3c28;
 }
 
 .circle-2 {
@@ -268,7 +351,13 @@ html {
   justify-content: space-between;
   align-items: center;
   align-self: center;
-  padding-left: 5rem;
+  padding-left: 5rem;}
+.faq-answer {
+    border-bottom: 1px solid #ccc;
+    display: none;
+    padding: 10px 1.5rem;
+    font-size: 16px;
+    color: #0d3c28;
 }
 
 .steps-prototype {
@@ -563,72 +652,6 @@ html {
 
 }
 
-@media only screen and (min-width:1025px) and (max-width: 1280px) {
-  .how-it-works {
-    padding: 3rem;
-
-    h1 {
-      font-size: 50px;
-    }
-  }
-
-  .step {
-    font-size: 15px;
-  }
-
-  .step h3 {
-    font-size: 8px;
-  }
-
-  h1 {
-    font-size: 5px;
-    margin-bottom: 100px;
-  }
-
-  .steps-prototype {
-    border-radius: 50% / 100% 100% 0% 0%;
-    width: 50%;
-    padding-left: -4%;
-  }
-
-  .steps-prototype img {
-    height: 285px;
-    width: 135px;
-  }
-
-  .option-txt {
-    font-size: 18px;
-    width: 80%;
-  }
-
-  .option-text {
-    font-size: 18px;
-  }
-
-  .option h2 {
-    font-size: 30px;
-  }
-
-
-  .step h3 {
-    font-size: 20px;
-    margin: 0;
-  }
-
-  #why-choose h1 {
-    font-size: 60px;
-  }
-
-  .choose-options {
-    margin-left: 0;
-  }
-
-  .option-txt {
-
-    margin-left: 0;
-
-  }
-}
 
 nav {
   display: flex;
@@ -657,8 +680,24 @@ nav {
   cursor: pointer;
 }
 
-.nav-bar a:active {
-  color: #289323;
+#home:active {
+    color: #4caf50;
+    font-weight: bold;
+    border-bottom: 2px solid #4caf50;
+}
+
+#nav-menu a{
+    transition: color 0.3s ease;
+}
+
+#nav-menu a.nav-link-active,
+#nav-menu a.nav-link-active:link,
+#nav-menu a.nav-link-active:visited,
+#nav-menu a.nav-link-active:hover,
+#nav-menu a.nav-link-active:active {
+  color: #4caf50;
+  font-weight: bold;
+  border-bottom: 2px solid #4caf50;
 }
 
 .hamburger {
@@ -669,12 +708,8 @@ nav {
   margin-top: -10px;
 }
 
-#home {
-  color: #289323;
-}
-
 .nav-bar ul li {
-  font-size: 32px;
+  font-size: 25px;
 }
 
 .hero img {
@@ -688,7 +723,7 @@ nav {
 }
 
 .hero h1 {
-  font-size: 110px;
+  font-size: 80px;
 }
 
 .hero-title {
@@ -696,7 +731,7 @@ nav {
 }
 
 .hero-title p {
-  font-size: 40px;
+  font-size: 30px;
   padding-right: 25%;
   margin-top: 1rem;
   margin-left: 1rem;
@@ -706,10 +741,19 @@ nav {
   padding: 0.7rem 3.5rem;
   font-family: nunito;
   border-radius: 50px;
-  font-size: 24px;
+  font-size: 20px;
   border: none;
   font-weight: bolder;
   margin: 3rem 1rem 0;
+}
+
+.how-it-works-btn{
+    border: none;
+    padding: 1em 5em;
+    background-color: #289323;
+    color: white;
+    border-radius: 10px;
+    margin-top: 1em;
 }
 
 .shop-now-btn {
@@ -744,7 +788,7 @@ nav {
 }
 
 .google-play p {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .google-play span {
@@ -756,7 +800,7 @@ nav {
 }
 
 .playstore {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: bolder;
 }
 
@@ -764,6 +808,7 @@ nav {
   display: flex;
   margin-top: -10rem;
   gap: 50px;
+  margin-left: 5em;
 }
 
 .prototype img {
@@ -787,7 +832,7 @@ nav {
 .categories-section h1 {
   text-align: center;
   color: #289323;
-  font-size: 60px;
+  font-size: 50px;
   margin: 5rem;
 }
 
@@ -808,6 +853,11 @@ nav {
   line-height: 1;
   font-size: 28px;
   color: #003A2A;
+}
+
+.google-play a{
+    text-decoration: none;
+    color: white;
 }
 
 .category h2 {
@@ -875,7 +925,7 @@ nav {
 
 .help-section h1 {
   justify-self: center;
-  font-size: 60px;
+  font-size: 50px;
   margin-bottom: 5rem;
   color: #0d3c28;
 }
@@ -1590,7 +1640,7 @@ nav {
 
 
 #contact-us h1 {
-  font-size: 64px;
+  font-size: 50px;
   margin-bottom: 1.5rem;
   margin-top: -1%;
   font-style: nunito;
@@ -1874,6 +1924,73 @@ nav {
   }
 
 }
+
+@media only screen and (min-width:1025px) and (max-width: 1280px) {
+    .how-it-works {
+      padding: 3rem;
+  
+      h1 {
+        font-size: 50px;
+      }
+    }
+  
+    .step {
+      font-size: 15px;
+    }
+  
+    .step h3 {
+      font-size: 8px;
+    }
+  
+    h1 {
+      font-size: 5px;
+      margin-bottom: 100px;
+    }
+  
+    .steps-prototype {
+      border-radius: 50% / 100% 100% 0% 0%;
+      width: 50%;
+      padding-left: -4%;
+    }
+  
+    .steps-prototype img {
+      height: 285px;
+      width: 135px;
+    }
+  
+    .option-txt {
+      font-size: 18px;
+      width: 80%;
+    }
+  
+    .option-text {
+      font-size: 18px;
+    }
+  
+    .option h2 {
+      font-size: 30px;
+    }
+  
+  
+    .step h3 {
+      font-size: 20px;
+      margin: 0;
+    }
+  
+    #why-choose h1 {
+      font-size: 60px;
+    }
+  
+    .choose-options {
+      margin-left: 0;
+    }
+  
+    .option-txt {
+  
+      margin-left: 0;
+  
+    }
+  }
 
 @media only screen and (min-width:300px) and (max-width: 374px) {
   #contactUs-container {
@@ -2552,19 +2669,7 @@ nav {
     font-style: nunito;
   }
 
-
-
-
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2657,36 +2762,7 @@ nav {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (min-width:1025px) and (max-width: 1280px) {
-
-
 
   #contactUs-container {
     padding: 15px;

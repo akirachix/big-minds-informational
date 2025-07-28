@@ -2,9 +2,8 @@ document.getElementById('hamburger').onclick = function() {
     const menu = document.getElementById('nav-menu');
     let hamburger = document.getElementById('hamburger');
     menu.classList.toggle('show');
-    
     if (menu.classList.contains('show')) {
-        hamburger.innerHTML = '&times;'; 
+        hamburger.innerHTML = '&times;';
     } else {
         hamburger.innerHTML = '&#9776;';
     }
@@ -23,6 +22,7 @@ function toggleFaq(element) {
         icon.classList.add("fa-minus");
     }
 }
+;
 
 const navLinks = document.querySelectorAll('#nav-menu a');
 navLinks.forEach(
@@ -34,7 +34,41 @@ navLinks.forEach(
             hamburger.innerHTML = '&#9776';
         })
     }
-)
+);
+
+const sections = Array.from(navLinks)
+  .map(link => {
+    const href = link.getAttribute('href');
+    if (href.startsWith('#')) {
+      return document.querySelector(href);
+    }
+    return null;
+  })
+  .filter(section => section !== null);
+
+window.addEventListener('scroll', () => {
+  let currentSectionId = '';
+  const scrollPos = window.scrollY;
+
+  sections.forEach(section => {
+    if (section.offsetTop <= scrollPos && (section.offsetTop + section.offsetHeight) > scrollPos) {
+      currentSectionId = section.id;
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove('nav-link-active');
+    const href = link.getAttribute('href');
+
+    if (href === '/') {
+      if (currentSectionId === '' && window.location.pathname === '/') {
+        link.classList.add('nav-link-active');
+      }
+    } else if (href === `#${currentSectionId}`) {
+      link.classList.add('nav-link-active');
+    }
+  });
+});
 
 document.addEventListener('click', function(event) {
     const nav = document.getElementById('nav-menu');
