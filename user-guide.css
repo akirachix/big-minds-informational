@@ -95,7 +95,7 @@ nav {
     line-height: 3;
     img{
         display: block;
-        width:50%;
+        width:100%;
         justify-self: center;
         border-radius: 20px;
     }
@@ -241,7 +241,7 @@ h3{
     }
     .user-title-container
         img{
-            width:60%;
+            width:100%;
             justify-self: center;
             border-radius: 20px;
         }
